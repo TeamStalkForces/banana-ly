@@ -29,8 +29,19 @@
                         <img class="image_logo" src="logo.png" style="height: 60px; width:121px" alt="">
                     </a>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 300px;">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 220px;">
                         <ul class="navbar-nav m-auto">
+                            <li class="nav-item ">
+                                <!-- <a class="nav-link" href="/managePage.html">Links</a> -->
+                                <form method="POST" action="managePage" class="manage">
+                                    <input type="hidden" name="email" value="<%= User.userEmail %>" readonly>
+                                    <button type="submit" 
+                                    style="margin-left: -30px;  font-size: large; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"
+                                    class="managebtn">Links</button> 
+                                    <!-- <input type="submit" class="btn btn-info" value="Links">  -->
+                                    <!--  <div class="nav-link" type="submit"  >Links</div> -->
+                                </form>
+                            </li>
                             <li class="nav-item active">
                                 <!-- <form method="POST" action="adSubmission" > -->
                                 <form method="POST" action="adSubmission" >
@@ -48,7 +59,7 @@
                                     <input type="hidden" name="email" value="<%= User.userEmail %>" readonly>
                                     <button type="submit" 
                                     style="margin-left: -30px;  font-size: large; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"
-                                    class="managebtn">ADs</button> 
+                                    class="managebtn">Statics</button> 
                                     <!-- <input type="submit" class="btn btn-info" value="Links">  -->
                                     <!--  <div class="nav-link" type="submit"  >Links</div> -->
                                 </form>
@@ -59,17 +70,6 @@
                                     <button type="submit" 
                                     style="margin-left: -30px;  font-size: large; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"
                                     class="managebtn">Wallet</button> 
-                                    <!-- <input type="submit" class="btn btn-info" value="Links">  -->
-                                    <!--  <div class="nav-link" type="submit"  >Links</div> -->
-                                </form>
-                            </li>
-                            <li class="nav-item ">
-                                <!-- <a class="nav-link" href="/managePage.html">Links</a> -->
-                                <form method="POST" action="managePage" class="manage">
-                                    <input type="hidden" name="email" value="<%= User.userEmail %>" readonly>
-                                    <button type="submit" 
-                                    style="margin-left: -30px;  font-size: large; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"
-                                    class="managebtn">Links</button> 
                                     <!-- <input type="submit" class="btn btn-info" value="Links">  -->
                                     <!--  <div class="nav-link" type="submit"  >Links</div> -->
                                 </form>

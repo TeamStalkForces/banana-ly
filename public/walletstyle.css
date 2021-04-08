@@ -596,6 +596,7 @@ footer{
   background-color: grey;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 .footer > *{
   flex: 1 100%;
 }
@@ -684,3 +685,9 @@ h2{
 }
 
 /* Footer Ends here */
+
+
+
+
+
+
