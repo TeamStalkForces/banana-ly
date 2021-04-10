@@ -275,7 +275,7 @@ body {
 }
 
 .premium .package-name::before{
-  content: "||Banana List||";
+  content: "Banana List";
   font-size: 24px;
   color: #ec2300;
 }
