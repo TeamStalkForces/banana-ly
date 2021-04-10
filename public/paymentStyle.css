@@ -158,11 +158,11 @@ body {
 
 .checkout_wrapper{
   width: 500px;
-  height: 357px;
+  height: 45%;
   margin-left: 6%;
   display: flex;
   margin-top: -37%;
-  margin-bottom: 10%;
+ 
 }
 
 .checkout_wrapper .product_info{
