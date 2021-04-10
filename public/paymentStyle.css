@@ -167,7 +167,6 @@ body {
 
 .checkout_wrapper .product_info{
   width: 45%;
-  background-image: url('paymentSlip.png');
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   position: relative;
