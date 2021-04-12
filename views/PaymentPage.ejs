@@ -115,7 +115,7 @@
                             <p class="slipTitle1">Pay For The Banana Smoothie</p>
                             <!-- Amount  -->
                             <div class="section" style="margin-top: 2%;">
-                                <input type="text" name="" id="" readonly placeholder="" value="Amount">
+                                <input type="text" name="" id="" readonly placeholder="" value="<%= Bill %>">
                             </div>
                             <!-- Amount  -->
                             <div class="section">
@@ -155,11 +155,11 @@
                             <p class="slipTitle2">Thanks For The Banana Pancakes</p>
                             <!-- Amount  -->
                             <div class="section" style="margin-top: 2%;">
-                                <input type="text" name="" id="" readonly placeholder="" value="Cashout">
+                                <input type="number" name="" id="" placeholder="cashout amount" min=100 max=<%= Balance %>>
                             </div>
                             <!-- Amount  -->
                             <div class="section">
-                                <input type="text" placeholder="Naame">
+                                <input type="text" placeholder="Name">
                             </div>
                             <div class="section">
                                 <input type="text" placeholder="Paassword">

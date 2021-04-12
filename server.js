@@ -167,30 +167,19 @@ app.post('/adSubmission', async (req, res) =>{
 
 app.post('/payment', async (req, res) => {
     const user = await User.findOne({ userEmail: req.body.email }) ;
-    const adsAr =  JSON.parse(req.body.ads_ar) ;
-    
-    await adsAr.forEach(element => {
-        Ad.create({
-            userEmail: user.userEmail,
-            adType: element["type"],
-            adEmbed: element["embedded"],
-            adRedirect: element["redirected"]
-        })
-    });
-    
-    res.render('AdSubmissionForm', {
-        User : user
+    res.render('PaymentPage', {
+        User: user,
+        Bill: req.body.bill,
+        Balance: 0
     })
 })
 
 app.post('/PaymentPage', async (req, res) => {
     const user = await User.findOne({ userEmail: req.body.email }) ;
-    const urlList = await shortUrl.find({ userEmail: req.body.email }).limit(3) ;
-    const urlStat = await shortUrl.find({ userEmail: req.body.email, monetized: true }) ;
     res.render('PaymentPage', {
         User: user,
-        urlList: urlList,
-        urlStat: urlStat
+        Bill: 0,
+        Balance: req.body.bal
     })
 })
 

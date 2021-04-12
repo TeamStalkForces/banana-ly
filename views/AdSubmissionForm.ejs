@@ -250,6 +250,7 @@
                             <td>
                                 <form method="POST" , action="payment">
                                     <input type="hidden" name="email" value="<%= User.userEmail %>">
+                                    <input type="hidden" name="bill" value="0" id="bill">
                                     <input type="hidden" name="ads_ar" value="asdf" id="ads_ar">
                                     <input type="submit" id="payment_btn" class="pay_btn" value="Pay now">
                                 </form>
@@ -404,6 +405,7 @@
                 showOutput("no_of_video", NoOfVideo);
                 showOutput("total_amount_video", TotalOfVideo);
                 showOutput("total_bill", TotalBill);
+                document.getElementById("bill").value = TotalBill;
 
                 let video = {
                     "type": "video",
@@ -431,6 +433,7 @@
                 showOutput("no_of_banner", NoOfBanner);
                 showOutput("total_amount_banner", TotalOfBanner);
                 showOutput("total_bill", TotalBill);
+                document.getElementById("bill").value = TotalBill;
 
                 let banner = {
                     "type": "banner",
@@ -457,6 +460,7 @@
                 showOutput("no_of_popup", NoOfPopup);
                 showOutput("total_amount_popup", TotalOfPopup);
                 showOutput("total_bill", TotalBill);
+                document.getElementById("bill").value = TotalBill;
 
                 let popup = {
                     "type": "newTab",
@@ -483,6 +487,7 @@
                 showOutput("no_of_text", NoOfText);
                 showOutput("total_amount_text", TotalOfText);
                 showOutput("total_bill", TotalBill);
+                document.getElementById("bill").value = TotalBill;
 
                 let text = {
                     "type": "smallBox",
