@@ -167,6 +167,18 @@ app.post('/adSubmission', async (req, res) =>{
 
 app.post('/payment', async (req, res) => {
     const user = await User.findOne({ userEmail: req.body.email }) ;
+
+    const adsAr =  JSON.parse(req.body.ads_ar) ;
+    
+    await adsAr.forEach(element => {
+        Ad.create({
+            userEmail: user.userEmail,
+            adType: element["type"],
+            adEmbed: element["embedded"],
+            adRedirect: element["redirected"]
+        })
+    });
+    
     res.render('PaymentPage', {
         User: user,
         Bill: req.body.bill,
