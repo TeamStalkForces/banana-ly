@@ -111,6 +111,7 @@
                             <div class="blog-slider__title">  Current Balance : <%= (totalIn-totalOut).toFixed(2) %> </div>
                             <!-- <div class="blog-slider__text"> 00 </div> -->
                             <form method="POST" action="PaymentPage" >
+                                <input type="hidden" name="bal" value="<%= (totalIn-totalOut).toFixed(2) %> " readonly>
                                 <input type="hidden" name="email" value="<%= User.userEmail %>" readonly>
                                 <button type="submit" 
                                 class="blog-slider__button">CASH OUT??</button> 
