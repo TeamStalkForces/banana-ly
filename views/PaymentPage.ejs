@@ -119,10 +119,10 @@
                             </div>
                             <!-- Amount  -->
                             <div class="section">
-                                <input type="text" placeholder="Name">
+                                <input type="text" placeholder="Name" id="name1">
                             </div>
                             <div class="section">
-                                <input type="text" placeholder="Password">
+                                <input type="text" placeholder="Password" id="password1">
                             </div>
                             <div class="section last_section">
                                 <form action="">
@@ -147,7 +147,7 @@
                                 </div>
                             </div>
                             <input type="submit" class="paySubBtn" value="Done" id="doneButton" />
-                            <input type="submit" class="paySubBtn" value="Clear" id="doneButton" />
+                            <input type="submit" class="paySubBtn" value="Clear" id="clearButton" onclick="clrBtn1()" />
                         </div>
                         <!-- Payment Part ENds -->
                         <!-- CashOut  Part Starts -->
@@ -159,10 +159,10 @@
                             </div>
                             <!-- Amount  -->
                             <div class="section">
-                                <input type="text" placeholder="Name">
+                                <input type="text" placeholder="Name" id="name2">
                             </div>
                             <div class="section">
-                                <input type="text" placeholder="Paassword">
+                                <input type="text" placeholder="Paassword" id="password2">
                             </div>
                             <div class="section last_section">
                                 <form action="">
@@ -186,10 +186,20 @@
                                     </label>
                                 </div>
                             </div>
-                            <input type="submit" class="paySubBtn" value="Done" id="doneButton" />
-                            <input type="submit" class="paySubBtn" value="Clear" id="doneButton" />
+                            <input type="submit" class="paySubBtn" value="Done" id="doneButton2" />
+                            <input type="submit" class="paySubBtn" value="Clear" id="clearButton2" onclick="clrBtn2()" />
                         </div>
                         <!-- CashOut Part ENds -->
+                        <script>
+                            function clrBtn1(){
+                                document.getElementById("name1").value = "" ;
+                                document.getElementById("password1").value = "" ;
+                            }
+                            function clrBtn2(){
+                                document.getElementById("name2").value = "" ;
+                                document.getElementById("password2").value = "" ;
+                            }
+                        </script>
                     </div>
                 </div>
             </div>
